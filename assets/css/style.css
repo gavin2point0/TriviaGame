@@ -1,6 +1,13 @@
 body {
     text-align: center;
+    background-image: url("../images/skulls.png"); 
+}
+.container {
+    margin-top: 150px;
 }
 .row {
     margin-bottom: 30px;
+}
+#timer {
+    margin-top: -20px;
 }

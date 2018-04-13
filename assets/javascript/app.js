@@ -1,12 +1,12 @@
 var questions = [
     {
-        question: 'how many inches are in a foot?',
+        question: 'When was the first Star Wars movie released',
         answers: {
-            a: 13,
-            b: 1,
-            c: 12
+            a: 1976,
+            b: 1977,
+            c: 1978
         },
-        correctAnswer: 'c'
+        correctAnswer: 'b'
     },
     {
         question: 'what color is grass?',
@@ -65,9 +65,9 @@ function run() {
 
     //adding questions to page
     for (var i = 0; i < questions.length; i++) {
-        $('#answer-a').html('<input type="radio" class="answers" name="answer" value="a"> a: ' + questions[currentQuestion].answers.a)
-        $('#answer-b').html('<input type="radio" class="answers" name="answer" value="b"> b: ' + questions[currentQuestion].answers.b)
-        $('#answer-c').html('<input type="radio" class="answers" name="answer" value="c"> c: ' + questions[currentQuestion].answers.c)
+        $('#answer-a').html('<input type="radio" class="answers" name="answer" value="a">' + questions[currentQuestion].answers.a)
+        $('#answer-b').html('<input type="radio" class="answers" name="answer" value="b">' + questions[currentQuestion].answers.b)
+        $('#answer-c').html('<input type="radio" class="answers" name="answer" value="c">' + questions[currentQuestion].answers.c)
     }
 
     //going to next page when button is clicked
